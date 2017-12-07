@@ -1,0 +1,9 @@
+---
+applications:
+- name: amqp-sample
+  random-route: true
+  buildpack: java_buildpack
+  path: target/amqp-sample-0.0.1-SNAPSHOT.jar
+  services:
+  - amqp
+  - service-registry
